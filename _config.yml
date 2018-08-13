@@ -4,6 +4,7 @@ tagline: "Dick Swart's personal webpage"
 author:
   name: Dick Swart
   email: d1cksw4r7@gmail.com
+  github: https://github.com/dickswart
 description: "Personal webpage of Dick Swart."
 
 # Dependencies
