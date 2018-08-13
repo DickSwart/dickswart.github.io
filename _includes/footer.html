@@ -1,11 +1,21 @@
-<ul>
-    <li>
-        <a href="mailto:{{ site.author.email }}">email</a>
-    </li>
-    <li>
-        <a href="{{site.author.github}}"><i class="fab fa-github"></i></a>
-    </li>
-    <li>
-        <a href="#">LinkedIn</a>
-    </li>
-</ul>
+<div class="row">
+    <div class="col align-self-center">
+        <ul class="list-inline">
+            <li class="list-inline-item">
+                <a href="mailto:{{ site.author.email }}">
+                    <i class="fab fa-envelope-square-f fa-3x"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="{{site.author.github}}">
+                    <i class="fab fa-github-square fa-3x"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="{{site.author.linkedin}}">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

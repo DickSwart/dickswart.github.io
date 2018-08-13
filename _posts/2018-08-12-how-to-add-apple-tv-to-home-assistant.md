@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "Dick Swart"
-date: 2018-08-12
+title:  "How to add Apple TV to Home Assistant"
+date:   2018-08-12
+category: [ blog, home-assistant ]
 ---
 
 I had issues finding my Apple TV with the scan as explained in the [official documentation](https://home-assistant.io/components/apple_tv/), So this is what I did to finally get it working.
