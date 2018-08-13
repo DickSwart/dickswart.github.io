@@ -1,2 +1,21 @@
-name: Dick Swart
+# Site settings
+title: Dick Swart
+tagline: "Dick Swart's personal webpage"
+author:
+  name: Dick Swart
+  email: d1cksw4r7@gmail.com
+description: "Personal webpage of Dick Swart."
+
+# Dependencies
 markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  auto_ids: true
+
+# Timezone
+timezone: Pacific/Auckland
+
+# Permalinks
+permalink: pretty
+#permalink: /blog/:year/:month/:day/:title
