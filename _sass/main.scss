@@ -1,0 +1,10 @@
+// Variables load before to overwrite !deault in third party
+@import 'variables';
+
+// Third party
+@import 'bootstrap/bootstrap';
+
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+    padding-top: 3.5rem;
+  }
