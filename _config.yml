@@ -19,3 +19,8 @@ timezone: Pacific/Auckland
 # Permalinks
 permalink: pretty
 #permalink: /blog/:year/:month/:day/:title
+
+# Sass/SCSS
+sass:
+  style: compressed
+  sass_dir: _sass
