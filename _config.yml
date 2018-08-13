@@ -22,5 +22,4 @@ permalink: pretty
 
 # Sass/SCSS
 sass:
-  style: compressed
-  sass_dir: _sass
+  style: compact # possible values: nested expanded compact compressed
