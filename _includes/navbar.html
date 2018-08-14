@@ -17,6 +17,7 @@
         <ul class="navbar-nav mr-auto">
             {% assign links = site.data.navigation %}
             {% for link in links %}
+                {% assign class = nil %}
                 {% if page.url contains link.url %}
                     {% assign class = 'active' %}
                 {% endif %}
@@ -40,7 +41,7 @@
                     </li>
                 {% else %}
                     <li class="nav-item {{ class }}">
-                        <a class="nav-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }} <span>(page:{{page.url}}, page:{{link.url}})</span></a>
+                        <a class="nav-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
 
                     </li>
                 {% endif %}
