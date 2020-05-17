@@ -6,7 +6,14 @@ author:
   email: dick@swart.ninja
   github: https://github.com/dickswart
   linkedin: http://linkedin.com/in/dickswart
+  buymeacoffee: https://www.buymeacoffee.com/swartninja
+  twitter: https://twitter.com/dnswart
 description: "Personal webpage of Dick Swart."
+
+plugins:
+  - jekyll-octicons
+  - jekyll-github-metadata
+  - jemoji
 
 # Dependencies
 markdown: kramdown
@@ -15,6 +22,17 @@ highlighter: rouge
 kramdown:
   auto_ids: true
 
+projects:
+  sort_by: pushed # options is pushed or stars
+  limit: 13
+  exclude:
+    archived: false
+    forks: true
+    projects:
+      - dickswart.github.io
+
+excerpt_separator: <!--more-->
+
 # Timezone
 timezone: Pacific/Auckland
 
@@ -22,7 +40,11 @@ timezone: Pacific/Auckland
 permalink: pretty
 #permalink: /blog/:year/:month/:day/:title
 
+hide_forks: true
+
 # Sass/SCSS
 sass:
   sass_dir: assets/_sass
   style: compressed # possible values: nested expanded compact compressed
+
+

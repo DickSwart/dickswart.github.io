@@ -1,13 +1,12 @@
 ---
 layout: content_wrapper
 title: Blog posts
+header: blog
 ---
 
-<h3>This is the about page</h3>
-<ul>
+<dl>
     {% for post in site.posts %}
-    <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
+    <dt><a href="{{ post.url }}">{{ post.title }}</a></dt>
+    <dd>{{ post.excerpt }} <a href="{{ post.url }}">read more..</a></dd>
     {% endfor %}
-</ul>
+</dl>
