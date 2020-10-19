@@ -13,7 +13,7 @@ Step by step guide on how to setup email on your [Proxmox](https://www.proxmox.c
 
 1. Install the authentication library
 
-```bash
+```console
 apt-get install libsasl2-modules
 ```
 
@@ -21,13 +21,13 @@ apt-get install libsasl2-modules
 
 3. Create a password file
 
-```bash
+```console
 nano /etc/postfix/sasl_passwd
 ```
 
 4. Insert your login details (substitute `youremail@mail.com` and `yourpassword`).
 
-```bash
+```console
 smtp.gmail.com youremail@mail.com:yourpassword
 ```
 
@@ -35,31 +35,31 @@ smtp.gmail.com youremail@mail.com:yourpassword
 
 6. Create a database from the password file.
 
-```bash
+```console
 postmap hash:/etc/postfix/sasl_passwd
 ```
 
 7. Protect the text password file.
 
-```bash
+```console
 chmod 600 /etc/postfix/sasl_passwd
 ```
 
 8. backup the postfix configuration file.
 
-```bash
+```console
 cp /etc/postfix/main.cf /etc/postfix/main.cf.backup
 ```
 
 9. Edit the postfix configuration file.
 
-```bash
+```console
 nano /etc/postfix/main.cf
 ```
 
 10. Add/change the following (certificates can be found in /etc/ssl/certs/)
 
-```bash
+```console
 relayhost = smtp.gmail.com:587
 smtp_use_tls = yes
 smtp_sasl_auth_enable = yes
@@ -72,11 +72,11 @@ smtp_tls_session_cache_timeout = 3600s
 
 11. Reload the updated configuration
 
-```bash
+```console
 postfix reload
 ```
 
 ### Testing
-```bash
+```console
 echo "test message" | mail -s "test subject" youremail@gmail.com
 ```
