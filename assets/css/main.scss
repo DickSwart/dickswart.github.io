@@ -53,3 +53,15 @@ a.link-gray {
 .height-full {
   height: 100% !important;
 }
+
+.language-console,
+.language-bash {
+  pre.highlight {
+    background: #222;
+    padding: 1em;
+    border-radius: 0.5em;
+    code {
+      color:#4AF626;
+    }
+  }
+}
